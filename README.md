@@ -1,8 +1,8 @@
 <!--
   browser: architecture-decision-record
   tracker: 2bd6622ec3beeeddd8ff55cf0ccf2efc
-  version: 2.0.0
-  updated: 2021-05-19T18:56:40Z
+  version: 3.0.0
+  updated: 2023-11-07T20:42:12Z
   contact: Joel Parker Henderson (http://joelparkerhenderson.com)
   options: commentable
 -->
@@ -13,37 +13,45 @@ An architecture decision record (ADR) is a document that captures an important a
 
 Contents:
 
-* [What is an architecture decision record?](#what-is-an-architecture-decision-record)
-* [How to start using ADRs](#how-to-start-using-adrs)
-* [How to start using ADRs with tools](#how-to-start-using-adrs-with-tools)
-* [How to start using ADRs with git](#how-to-start-using-adrs-with-git)
-* [ADR file name conventions](#adr-file-name-conventions)
-* [Suggestions for writing good ADRs](#suggestions-for-writing-good-adrs)
-* [ADR example templates](#adr-example-templates)
-* [Teamwork advice](#teamwork-advice)
-* [For more information](#for-more-information)
+- [What is an architecture decision record?](#what-is-an-architecture-decision-record)
+- [How to start using ADRs](#how-to-start-using-adrs)
+- [How to start using ADRs with tools](#how-to-start-using-adrs-with-tools)
+- [How to start using ADRs with git](#how-to-start-using-adrs-with-git)
+- [File name conventions for ADRs](#file-name-conventions-for-adrs)
+- [Suggestions for writing good ADRs](#suggestions-for-writing-good-adrs)
+- [ADR example templates](#adr-example-templates)
+- [Teamwork advice for ADRs](#teamwork-advice-for-adrs)
+- [For more information](#for-more-information)
 
 Templates:
 
-* [Decision record template by Jeff Tyree and Art Akerman](templates/decision-record-template-by-jeff-tyree-and-art-akerman/index.md)
-* [Decision record template by Michael Nygard](templates/decision-record-template-by-michael-nygard/index.md)
-* [Decision record template for Alexandrian pattern](templates/decision-record-template-for-alexandrian-pattern/index.md)
-* [Decision record template for business case](templates/decision-record-template-for-business-case/index.md)
-* [Decision record template for MADR](templates/decision-record-template-madr/index.md)
-* [Decision record template using Planguage](templates/decision-record-template-using-planguage/index.md)  
+* [Decision record template by Jeff Tyree and Art Akerman](locales/en/templates/decision-record-template-by-jeff-tyree-and-art-akerman/)
+* [Decision record template by Michael Nygard](locales/en/templates/decision-record-template-by-michael-nygard/)
+* [Decision record template by EdgeX](locales/en/templates/decision-record-template-by-edgex/)
+* [Decision record template for Alexandrian pattern](locales/en/templates/decision-record-template-for-alexandrian-pattern/)
+* [Decision record template for business case](locales/en/templates/decision-record-template-for-business-case/)
+* [Decision record template of the MADR project](locales/en/templates/decision-record-template-of-the-madr-project/)
+* [Decision record template using Planguage](locales/en/templates/decision-record-template-using-planguage/)
 * [Decision record template by Paulo Merson](https://github.com/pmerson/ADR-template)
+* [Decision record template by Olaf Zimmermann](https://medium.com/olzzio/y-statements-10eb07b5a177)
+* [Translations into more languages](locales/)
 
 Examples:
 
-* [CSS framework](examples/css-framework/index.md)
-* [Environment variable configuration](examples/environment-variable-configuration/index.md)
-* [Metrics, monitors, alerts](examples/metrics-monitors-alerts/index.md)
-* [Microsoft Azure DevOps](examples/microsoft-azure-devops/index.md)
-* [Monorepo vs multirepo](examples/monorepo-vs-multirepo/index.md)
-* [Programming languages](examples/programming-languages/index.md)
-* [Secrets storage](examples/secrets-storage/index.md)
-* [Timestamp format](examples/timestamp-format/index.md)
+* [CSS framework](locales/en/examples/css-framework/)
+* [Environment variable configuration](locales/en/examples/environment-variable-configuration/)
+* [Metrics, monitors, alerts](locales/en/examples/metrics-monitors-alerts/)
+* [Microsoft Azure DevOps](locales/en/examples/microsoft-azure-devops/)
+* [Monorepo vs multirepo](locales/en/examples/monorepo-vs-multirepo/)
+* [Programming languages](locales/en/examples/programming-languages/)
+* [Secrets storage](locales/en/examples/secrets-storage/)
+* [Timestamp format](locales/en/examples/timestamp-format/)
+* [Many more...](locales/en/examples/)
 
+[Translations into more languages](locales/)
+
+
+<div class="include" data-path="locales/en/what-is-an-architecture-decision-record">
 
 ## What is an architecture decision record?
 
@@ -71,6 +79,9 @@ Abbreviations:
 
   * **ASR**: architecturally-significant requirement
 
+</div>
+
+<div class="include" data-path="locales/en/how-to-start-using-adrs">
 
 ## How to start using ADRs
 
@@ -106,8 +117,6 @@ Decision sharing (optional):
 
   * Hence, experiences with past decisions, both good and bad, can be valuable reusable assets when employing an explicit knowledge management strategy.
 
-  * Group decision making is an active research topic.
-
 Decision documentation:
 
   * Many templates and tools for decision capturing exist.
@@ -116,12 +125,13 @@ Decision documentation:
 
   * See traditional software engineering and architecture design processes, e.g. table layouts suggested by IBM UMF and by Tyree and Akerman from CapitalOne.
 
-Decision guidance:
+For more:
 
   * The steps above are adopted from the Wikipedia entry on [Architectural Decision](https://en.wikipedia.org/wiki/Architectural_decision)
 
-  * A number of decision making techniques exists, both general ones and software architecture specific ones, for instance, dialogue mapping.
+</div>
 
+<div class="include" data-path="locales/en/how-to-start-using-adrs-with-tools">
 
 ## How to start using ADRs with tools
 
@@ -137,6 +147,9 @@ For example:
 
   * If you like using wikis, such as MediaWiki, then you can create an ADR wiki.
 
+</div>
+
+<div class="include" data-path="locales/en/how-to-start-using-ADRs-with-git">
 
 ## How to start using ADRs with git
 
@@ -158,8 +171,11 @@ Write anything you want in the ADR. See the templates in this repository for ide
 
 Commit the ADR to your git repo.
 
+</div>
 
-## ADR file name conventions
+<div class="include" data-path="locales/en/file-name-conventions-for-adrs">
+
+## File name conventions for ADRs
 
 If you choose to create your ADRs using typical text files, then you may want to come up with your own ADR file name convention.
 
@@ -183,12 +199,15 @@ Our file name convention:
 
   * The extension is markdown. This can be useful for easy formatting.
 
+</div>
+
+<div class="import" data-path="locales/en/suggestions-for-writing-good-adrs">
 
 ## Suggestions for writing good ADRs
 
 Characteristics of a good ADR:
 
-  * Rational: Explain the reasons for doing the particular AD. This can include the context (see below), pros and cons of various potential choices, feature comparions, cost/benefit discussions, and more.
+  * Rationale: Explain the reasons for doing the particular AD. This can include the context (see below), pros and cons of various potential choices, feature comparisons, cost/benefit discussions, and more.
 
   * Specific: Each ADR should be about one AD, not multiple ADs.
 
@@ -216,25 +235,27 @@ A new ADR may take the place of a previous ADR:
 
   * When an AD is made that replaces or invalidates a previous ADR, then a new ADR should be created
 
+</div>
 
 ## ADR example templates
 
 ADR example templates that we have collected on the net:
 
-  * [ADR template by Michael Nygard](templates/decision-record-template-by-michael-nygard/index.md) (simple and popular)
+  * [ADR template by Michael Nygard](locales/en/templates/decision-record-template-by-michael-nygard/) (simple and popular)
 
-  * [ADR template by Jeff Tyree and Art Akerman](templates/decision-record-template-by-jeff-tyree-and-art-akerman/index.md) (more sophisticated)
+  * [ADR template by Jeff Tyree and Art Akerman](locales/en/templates/decision-record-template-by-jeff-tyree-and-art-akerman/) (more sophisticated)
 
-  * [ADR template for Alexandrian pattern](templates/decision-record-template-for-alexandrian-pattern/index.md) (simple with context specifics)
+  * [ADR template for Alexandrian pattern](locales/en/templates/decision-record-template-for-alexandrian-pattern/) (simple with context specifics)
 
-  * [ADR template for business case](templates/decision-record-template-for-business-case/index.md) (more MBA-oriented, with costs, SWOT, and more opinions)
+  * [ADR template for business case](locales/en/templates/decision-record-template-for-business-case/) (more MBA-oriented, with costs, SWOT, and more opinions)
 
-  * [ADR template MADR](templates/decision-record-template-madr/index.md) (more Markdown)
+  * [ADR template of the Markdown Any Decision Records (MADR) project](locales/en/templates/decision-record-template-of-the-madr-project/) (both simple and elaborate version; the latter emphasizes options and their pros and cons)
 
-  * [ADR template using Planguage](templates/decision-record-template-using-planguage/index.md) (more quality assurance oriented)
+  * [ADR template using Planguage](locales/en/templates/decision-record-template-using-planguage/) (more quality assurance oriented)
 
+<div class="import" data-path="locales/en/teamwork-advice-for-adrs">
 
-## Teamwork advice
+## Teamwork advice for ADRs
 
 If you're considering using decision records with your team, then here's some advice that we've learned by working with many teams.
 
@@ -242,8 +263,9 @@ You have an opportunity to lead your teammates, by talking together about the "w
 
 Some teams much prefer the name "decisions" over the abbreviation "ADRs". When some teams use the directory name "decisions", then it's as if a light bulb turns on, and the team starts putting more information into the directory, such as vendor decisions, planning decisions, scheduling decisions, etc. All of these kinds of information can use the same template. We hypothesize that people learn faster with words ("decisions") over abbreviations ("ADRs"), and people are more motivated to write work-in-progress docs when the word "record" is removed, and also some developers and some managers dislike the word "architecture".
 
-In theory, immutability is ideal. In practice, mutability has worked better for our teams. We insert the new info the existing ADR, with a date stamp, and a note that the info arrived after the decision. This kind of approach leads to a "living document" that we all can update. Typical updates are when we get information thanks to new teammates, or new offerings, or real-world results of our usages, or after-the-fact third-party changes such as vendor capabilties, pricing plans, license agreements, etc.
+In theory, immutability is ideal. In practice, mutability has worked better for our teams. We insert the new info the existing ADR, with a date stamp, and a note that the info arrived after the decision. This kind of approach leads to a "living document" that we all can update. Typical updates are when we get information thanks to new teammates, or new offerings, or real-world results of our usages, or after-the-fact third-party changes such as vendor capabilities, pricing plans, license agreements, etc.
 
+</div>
 
 ## For more information
 
@@ -257,7 +279,7 @@ Templates:
 
   * [Documenting architecture decisions - Michael Nygard (thinkrelevance.com)](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 
-  * [Markdown Architectural Decision Records (adr.github.io)](https://adr.github.io/madr/) - provided by the [adr GitHub organization](https://adr.github.io/)
+  * [Markdown Architectural Decision Records (adr.github.io)](https://adr.github.io/madr/)
 
   * [Template for documenting architecture alternatives and decisions (stackoverflow.com)](http://stackoverflow.com/questions/7104735/template-for-documenting-architecture-alternatives-and-decisions)
 
@@ -275,11 +297,25 @@ In-depth:
 
   * [ThoughtWorks Technology Radar: Lightweight Architecture Decision Records (thoughtworks.com)](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records)
 
+  * [A Skeptic’s Guide to Software Architecture Decisions (infoq.com)](https://www.infoq.com/articles/architecture-skeptics-guide/)
+
+ * [Architectural Decisions — The Making Of](https://ozimmer.ch/practices/2020/04/27/ArchitectureDecisionMaking.html)
+
 Tools:
 
   * [Command-line tools for working with Architecture Decision Records](https://github.com/npryce/adr-tools)
 
   * [Command line tools with python by Victor Sluiter](https://bitbucket.org/tinkerer_/adr-tools-python/src/master/)
+
+  * [Architectural Design Decision Support Framework (ADvISE)](https://swa.univie.ac.at/Software_Architecture/research-projects/architectural-design-decision-support-framework-advise/)
+
+Company-Specific Guidance:
+
+  * [Amazon: AWS Prescriptive Guidance: ADR Process](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html)
+
+ * [GitHub: ADR GitHub organization](https://adr.github.io/)
+
+ * [RedHat: Why you should use ADRs](https://www.redhat.com/architect/architecture-decision-records)
 
 Examples:
 
